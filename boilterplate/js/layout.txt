@@ -1,0 +1,10 @@
+export default function Layout({ children }) {
+  return (
+    <div className="min-h-screen">
+      <header className="p-4 border-b">
+        <h1>Layout</h1>
+      </header>
+      <main className="p-4">{children}</main>
+    </div>
+  )
+}

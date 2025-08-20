@@ -1,0 +1,17 @@
+import { NextResponse } from 'next/server'
+
+export function GET() {
+  return NextResponse.json({ hello: 'Hello World' }, { status: 200 })
+}
+
+export function POST() {
+  return NextResponse.json({ hello: 'Hello World' }, { status: 200 })
+}
+
+export function PUT() {
+  return NextResponse.json({ hello: 'Hello World' }, { status: 200 })
+}
+
+export function DELETE() {
+  return NextResponse.json({ hello: 'Hello World' }, { status: 200 })
+}

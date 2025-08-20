@@ -1,0 +1,73 @@
+{
+  "name": "next-router-gen",
+  "version": "1.0.0",
+  "description": "Automatic Next.js App Router boilerplate generator with TypeScript/JavaScript support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./cli": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.js"
+    }
+  },
+  "bin": {
+    "next-router-gen": "./dist/cli.js",
+    "route-boilerplate": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "boilterplate",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nextjs",
+    "next.js",
+    "app-router",
+    "boilerplate",
+    "generator",
+    "typescript",
+    "javascript",
+    "react",
+    "cli",
+    "development-tools"
+  ],
+  "author": {
+    "name": "migueldev1047",
+    "email": "miguelangeljimenez1047@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migueldev1047/next-router-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/migueldev1047/next-router-gen/issues"
+  },
+  "homepage": "https://github.com/migueldev1047/next-router-gen#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/node": "^22.17.2",
+    "eslint-config-prettier": "^10.1.8",
+    "typescript": "5.9.2",
+    "typescript-eslint": "^8.40.0"
+  }
+}

@@ -1,0 +1,30 @@
+# Source files
+src/
+tsconfig.json
+.eslintrc.*
+eslint.config.*
+
+# Development files
+.git/
+.gitignore
+*.log
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+*.test.*
+*.spec.*
+
+# Build artifacts (keep only dist/)
+*.tsbuildinfo
