@@ -28,7 +28,7 @@ bun add next-router-gen -d
 
 ## Usage
 
-### Quick Start with Next.js
+### Quick Start with Next.js (⚠️ Only works in App Router)
 
 1. **Install the package** in your Next.js project:
 
