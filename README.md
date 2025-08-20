@@ -23,7 +23,7 @@ yarn add -D next-router-gen
 pnpm add -D next-router-gen
 
 # bun
-bun add -D next-router-gen
+bun add next-router-gen -d
 ```
 
 ## Usage
