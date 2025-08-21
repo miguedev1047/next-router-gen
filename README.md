@@ -26,6 +26,12 @@ pnpm add -D next-router-gen
 bun add -D next-router-gen
 ```
 
+## Show Case
+
+<video src="./src/assets/video-demo.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
 ## Usage
 
 ### Quick Start with Next.js
