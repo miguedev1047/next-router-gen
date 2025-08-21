@@ -1,6 +1,6 @@
 {
   "name": "next-router-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatic Next.js App Router boilerplate generator with TypeScript/JavaScript support",
   "type": "module",
   "main": "./dist/index.js",
