@@ -23,7 +23,7 @@ yarn add -D next-router-gen
 pnpm add -D next-router-gen
 
 # bun
-bun add -D next-router-gen
+bun add next-router-gen -d
 ```
 
 ## Show Case
@@ -34,7 +34,7 @@ bun add -D next-router-gen
 
 ## Usage
 
-### Quick Start with Next.js
+### Quick Start with Next.js (⚠️ Only works in App Router)
 
 1. **Install the package** in your Next.js project:
 
