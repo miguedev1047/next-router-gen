@@ -23,18 +23,16 @@ yarn add -D next-router-gen
 pnpm add -D next-router-gen
 
 # bun
-bun add next-router-gen -d
+bun add -D next-router-gen
 ```
 
 ## Show Case
 
-<video src="./src/assets/video-demo.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+![Showcase](./src/assets/video-demo.gif)
 
 ## Usage
 
-### Quick Start with Next.js (⚠️ Only works in App Router)
+### Quick Start with Next.js
 
 1. **Install the package** in your Next.js project:
 
