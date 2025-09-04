@@ -45,7 +45,7 @@ npm install -D next-router-gen
 ```json
 {
   "scripts": {
-    "dev": "next-router-gen & next dev",
+    "dev": "next-router-gen && next dev",
     "watch-routes": "next-router-gen",
     "build": "next build",
     "start": "next start"
