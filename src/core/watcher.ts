@@ -14,11 +14,20 @@ export function startWatcher(options: WatcherOptions = {}) {
     return { close: () => {} } // Return a dummy watcher
   }
 
-  const appDir = config.appDir!
+  let appDir = config.appDir!
 
   // Validate that the directory exists
   if (!fs.existsSync(appDir)) {
-    throw new Error(`Directory does not exist: ${appDir}`)
+    const alternatives = ['./app', './src/app']
+    const found = alternatives.find((dir) => fs.existsSync(dir))
+
+    if (!found) {
+      throw new Error(
+        `❌ Could not find app directory. Tried: ${alternatives.join(', ')}`
+      )
+    }
+
+    appDir = found
   }
 
   console.log(' ')
@@ -48,10 +57,10 @@ export function startWatcher(options: WatcherOptions = {}) {
       // Determine which language to use based on config or file extension
       const useLanguage = config.typescript ? 'typescript' : fileInfo.language
       const templates = getTemplates(useLanguage)
-      
+
       const template = templates[fileInfo.type]
       const fileTypeLabel = `${fileInfo.type} component`
-      
+
       fillFileIfEmpty(filePath, template, fileTypeLabel)
     }
   })
