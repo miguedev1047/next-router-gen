@@ -10,10 +10,15 @@ export function startWatcher(options = {}) {
         console.log('⏸️ Watcher is disabled by configuration');
         return { close: () => { } }; // Return a dummy watcher
     }
-    const appDir = config.appDir;
+    let appDir = config.appDir;
     // Validate that the directory exists
     if (!fs.existsSync(appDir)) {
-        throw new Error(`Directory does not exist: ${appDir}`);
+        const alternatives = ['./app', './src/app'];
+        const found = alternatives.find((dir) => fs.existsSync(dir));
+        if (!found) {
+            throw new Error(`❌ Could not find app directory. Tried: ${alternatives.join(', ')}`);
+        }
+        appDir = found;
     }
     console.log(' ');
     console.log(`🔍 Watching for new files in: ${appDir}`);

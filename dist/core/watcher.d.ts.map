@@ -1,1 +1,1 @@
-{"version":3,"file":"watcher.d.ts","sourceRoot":"","sources":["../../src/core/watcher.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAA;AAKvD,wBAAgB,YAAY,CAAC,OAAO,GAAE,cAAmB;;EAuDxD"}
+{"version":3,"file":"watcher.d.ts","sourceRoot":"","sources":["../../src/core/watcher.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAA;AAKvD,wBAAgB,YAAY,CAAC,OAAO,GAAE,cAAmB;;EAgExD"}
