@@ -40,20 +40,7 @@ bun add next-router-gen -d
 npm install -D next-router-gen
 ```
 
-2. **Option A: Simple setup (recommended)**
-
-```json
-{
-  "scripts": {
-    "dev": "next-router-gen & next dev",
-    "watch-routes": "next-router-gen",
-    "build": "next build",
-    "start": "next start"
-  }
-}
-```
-
-3. **Option B: Using concurrently for better control**
+2. **Option A: Simple setup (recommended, better control)**
 
 ```bash
 npm install -D concurrently
